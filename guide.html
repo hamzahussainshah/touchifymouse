@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guide — TouchifyMouse</title>
+<meta name="description" content="Set up TouchifyMouse: install the desktop app, connect your phone, and use the trackpad, keyboard, media remote, microphone and speaker. Includes fixes for the common problems." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234F46E5'/%3E%3Cpath d='M22 18a4 4 0 014-4h12a4 4 0 014 4v28a10 10 0 01-20 0V18z' fill='white'/%3E%3Ccircle cx='32' cy='25' r='2.5' fill='%234F46E5'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-mouse" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2h6a4 4 0 014 4v12a7 7 0 01-14 0V6a4 4 0 014-4zm3 3.5a1.2 1.2 0 00-1.2 1.2v3a1.2 1.2 0 002.4 0v-3A1.2 1.2 0 0012 5.5z"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M16.365 1.43c0 1.14-.47 2.22-1.23 3.01-.79.83-2.08 1.47-3.14 1.38-.13-1.11.44-2.29 1.16-3.02.8-.83 2.19-1.44 3.21-1.37zM20.9 17.1c-.55 1.28-.82 1.85-1.53 2.98-.99 1.58-2.39 3.55-4.12 3.56-1.54.01-1.93-1-4.02-.99-2.09.01-2.52 1.01-4.06.99-1.73-.02-3.05-1.79-4.04-3.37-2.77-4.41-3.06-9.58-1.35-12.33 1.21-1.95 3.13-3.09 4.93-3.09 1.84 0 2.99 1.01 4.51 1.01 1.47 0 2.37-1.01 4.49-1.01 1.61 0 3.31.88 4.53 2.39-3.98 2.18-3.33 7.85.66 8.86z"/></symbol>
+  <symbol id="i-windows" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449 9.75 2.1v9.451H0zm10.949-1.501L24 0v11.4H10.949zM0 12.6h9.75v9.451L0 20.699zm10.949 0H24V24l-13.051-1.801z"/></symbol>
+</svg>
+
+<nav>
+  <div class="inner">
+    <a class="logo" href="index.html"><span class="logo-mark"><svg><use href="#i-mouse"/></svg></span>TouchifyMouse</a>
+    <div class="links">
+      <a class="hide-sm" href="index.html#features">Features</a>
+      <a href="#setup">Setup</a>
+      <a class="hide-sm" href="#using">Using it</a>
+      <a href="#trouble">Fixes</a>
+    </div>
+  </div>
+</nav>
+
+<section style="padding:64px 0 40px">
+  <div class="wrap" style="max-width:820px">
+    <span class="eyebrow">Guide</span>
+    <h1>Set up TouchifyMouse.</h1>
+    <p class="lead">Install the companion on your computer, connect your phone on the same Wi-Fi, and use it as a trackpad, keyboard, media remote, microphone or speaker. About a minute, start to finish.</p>
+  </div>
+</section>
+
+<section id="setup" style="padding-top:56px">
+  <div class="wrap" style="max-width:820px">
+    <h2>1 · Install on your computer</h2>
+
+    <div class="step" style="margin-top:22px">
+      <span class="step-num"><svg style="width:15px;height:15px" fill="currentColor" viewBox="0 0 24 24"><use href="#i-apple"/></svg></span>
+      <div class="step-body">
+        <h3>macOS</h3>
+        <p>Open <strong>TouchifyMouse-mac.dmg</strong> and drag TouchifyMouse to Applications. The app isn't signed with an Apple Developer ID yet, so the first launch needs a <strong>right-click on the app → Open → Open</strong>. After that it opens normally and lives in the menu bar.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num"><svg style="width:14px;height:14px" fill="currentColor" viewBox="0 0 24 24"><use href="#i-windows"/></svg></span>
+      <div class="step-body">
+        <h3>Windows</h3>
+        <p>Run <strong>TouchifyMouse-win-Setup.exe</strong>. SmartScreen may warn about an unknown publisher — choose <em>More info → Run anyway</em>. Prefer no installer? Use the portable zip and run <code>touchifymouse_desktop.exe</code> from the extracted folder.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px">2 · Let it control your Mac</h2>
+    <p>macOS blocks any app from moving the pointer or typing until you allow it. Windows needs nothing here, so skip ahead.</p>
+    <p>Open <strong>Permissions</strong> in the app and press <strong>Grant</strong>, then switch <strong>TouchifyMouse</strong> on in System Settings → Privacy &amp; Security → Accessibility. It applies within a second or two — you don't need to restart anything.</p>
+    <div class="note">
+      <p><strong>Still says “Not granted” with the switch on?</strong> macOS ties that permission to one exact copy of the app, so after an update it can point at the old one. Press <strong>Reset permission</strong> in the Permissions screen and turn it on once more.</p>
+    </div>
+
+    <h2 style="margin-top:44px">3 · Install the phone app</h2>
+    <p>Get TouchifyMouse from <a href="https://play.google.com/store/apps/details?id=com.touchifymouse.app">Google Play</a> (the iOS version is on the way). Put the phone on the <strong>same Wi-Fi network</strong> as your computer — that is the only requirement.</p>
+
+    <h2 style="margin-top:44px">4 · Connect</h2>
+    <div class="figure-row" style="margin-top:6px">
+      <figure style="flex:0 0 auto">
+        <img src="img/connect.png" width="414" height="900" alt="Connect screen showing the computer found on the network" loading="lazy" />
+        <figcaption>The computer appears by itself.</figcaption>
+      </figure>
+      <div style="flex:1 1 300px">
+        <p>Open the app and it looks for computers running the companion. Tap yours and you're connected. Two other ways, if you need them:</p>
+        <ul>
+          <li><strong>QR code</strong> — tap <em>Scan QR code</em> and point the phone at the code in the desktop app's <em>QR Connect</em> screen.</li>
+          <li><strong>IP address</strong> — type the address shown in the desktop app into the box at the bottom.</li>
+        </ul>
+        <p>Your computer is remembered, so next time the app reconnects on its own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="using">
+  <div class="wrap" style="max-width:820px">
+    <h2>Using it</h2>
+    <p>The tabs along the bottom switch between the trackpad, keyboard, media remote and audio.</p>
+
+    <h3 style="margin-top:32px">Trackpad</h3>
+    <div class="figure-row">
+      <figure style="flex:0 0 auto">
+        <img src="img/trackpad.png" width="414" height="900" alt="Trackpad screen" loading="lazy" />
+      </figure>
+      <div style="flex:1 1 300px">
+        <table>
+          <tr><th>Slide one finger</th><td>Move the pointer</td></tr>
+          <tr><th>Tap</th><td>Click</td></tr>
+          <tr><th>Two-finger tap</th><td>Right-click</td></tr>
+          <tr><th>Two-finger slide</th><td>Scroll</td></tr>
+          <tr><th>Hold <em>Left</em>, then slide</th><td>Drag and drop</td></tr>
+          <tr><th>Scroll strip (middle)</th><td>Scroll with one finger</td></tr>
+        </table>
+        <p class="small muted" style="margin-top:12px">Pointer speed, natural scrolling, left-handed mode and the click buttons are all in Settings.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px">Keyboard</h3>
+    <div class="figure-row">
+      <figure style="flex:0 0 auto">
+        <img src="img/keys.png" width="414" height="900" alt="Keyboard screen with modifiers and shortcuts" loading="lazy" />
+      </figure>
+      <div style="flex:1 1 300px">
+        <p>Tap the text field and type with your phone's own keyboard — capitals, symbols, emoji and other languages all arrive exactly as typed.</p>
+        <p><strong>Modifiers:</strong> tap Shift, Ctrl, Option or Cmd to apply it to the next key; hold to lock it. So Cmd then <em>A</em> selects all.</p>
+        <p><strong>Shortcuts:</strong> one tap for copy, paste, undo, screenshot, app switcher, Mission Control or show desktop, plus arrows, Esc, Tab, Home/End, Page Up/Down and F1–F12.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px">Media</h3>
+    <div class="figure-row">
+      <figure style="flex:0 0 auto">
+        <img src="img/media.png" width="414" height="900" alt="Media remote screen" loading="lazy" />
+      </figure>
+      <div style="flex:1 1 300px">
+        <p>Play, pause, skip and mute anything that answers the media keys — Music, Spotify, a video in your browser. The volume slider mirrors your computer's volume and moves with it.</p>
+        <p class="small muted">Now-playing details appear for Music and Spotify.</p>
+      </div>
+    </div>
+
+    <h3 id="audio" style="margin-top:36px">Microphone &amp; speaker</h3>
+    <div class="figure-row">
+      <figure style="flex:0 0 auto">
+        <img src="img/audio.png" width="414" height="900" alt="Audio screen with microphone and speaker switches" loading="lazy" />
+      </figure>
+      <div style="flex:1 1 300px">
+        <p><strong>Microphone</strong> sends your phone's mic to the computer. <strong>Speaker</strong> sends the computer's sound to your phone. Turn both on and echo cancellation is applied automatically.</p>
+        <p>Both need a free virtual audio driver, which the app offers to install: <a href="https://existential.audio/blackhole/">BlackHole</a> on macOS, <a href="https://vb-audio.com/Cable/">VB-CABLE</a> on Windows.</p>
+        <div class="note">
+          <p><strong>Important for calls:</strong> Zoom, Meet, Discord and Teams keep their own microphone setting and ignore your computer's default. Pick <strong>BlackHole 2ch</strong> (macOS) or <strong>CABLE Output</strong> (Windows) as the microphone inside that app, or it will keep recording the built-in mic.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px">Settings</h3>
+    <div class="figure-row">
+      <figure style="flex:0 0 auto">
+        <img src="img/settings.png" width="414" height="900" alt="Settings screen" loading="lazy" />
+      </figure>
+      <div style="flex:1 1 300px">
+        <p><strong>Appearance:</strong> AMOLED, Dark or Light, and two interface styles — Comfortable, or Minimal for a flat, quiet look.</p>
+        <p><strong>Mouse:</strong> pointer speed, natural scrolling, click buttons, haptics and left-handed mode.</p>
+        <p><strong>Privacy:</strong> switch anonymous crash reports and the update check off whenever you like.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trouble">
+  <div class="wrap" style="max-width:820px">
+    <h2>If something isn't working</h2>
+    <div style="margin-top:22px">
+      <details open>
+        <summary>The phone doesn't find my computer</summary>
+        <p>Check both devices are on the same Wi-Fi — a phone on mobile data, or a “guest” network, can't see your computer. Some routers block the discovery traffic between devices (often called AP isolation or client isolation); if yours does, type the IP address shown in the desktop app instead, or scan the QR code. Also make sure the desktop app is actually running: on macOS it lives in the menu bar, not the Dock.</p>
+      </details>
+      <details>
+        <summary>Connected, but nothing moves or types (macOS)</summary>
+        <p>That is the Accessibility permission. Open <strong>Permissions</strong> in the desktop app: if it says “Not granted”, press <strong>Grant</strong> and switch TouchifyMouse on. If the switch already looks on, press <strong>Reset permission</strong> — macOS keeps that permission tied to one exact copy of the app, so an update can leave a switch that is on but no longer applies.</p>
+      </details>
+      <details>
+        <summary>Media keys do nothing</summary>
+        <p>Media control also needs the Accessibility permission above. Without it the app can only reach Music and Spotify, so a video playing in your browser won't respond. Grant it and everything that answers the media keys works.</p>
+      </details>
+      <details>
+        <summary>The microphone works but nobody hears me</summary>
+        <p>Your call app is probably still listening to the built-in microphone. In its audio settings choose <strong>BlackHole 2ch</strong> (macOS) or <strong>CABLE Output</strong> (Windows). The app tells you which device to pick while the microphone is on.</p>
+      </details>
+      <details>
+        <summary>The connection drops when the screen locks</summary>
+        <p>Some phones — Xiaomi, OPPO, Samsung and others with aggressive battery management — freeze apps in the background, which closes the connection. Allow TouchifyMouse to run in the background, or turn battery optimisation off for it, in your phone's battery settings. Reopening the app reconnects immediately.</p>
+      </details>
+      <details>
+        <summary>Sound is choppy or delayed</summary>
+        <p>Audio needs a steady Wi-Fi link. Move closer to the router, prefer 5 GHz, and avoid using the microphone and speaker at once on a busy network. If the computer is on Ethernet and the phone on Wi-Fi, make sure both are on the same subnet.</p>
+      </details>
+    </div>
+    <p style="margin-top:28px">Still stuck? Email <a href="mailto:aitools.deventiatech@gmail.com">aitools.deventiatech@gmail.com</a> and say which computer and phone you're using.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <span class="muted small">© <span id="year">2026</span> TouchifyMouse</span>
+    <span class="spacer"></span>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete account</a>
+    <a href="mailto:aitools.deventiatech@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

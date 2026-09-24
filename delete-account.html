@@ -5,83 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Delete your account — TouchifyMouse</title>
 <meta name="description" content="How the TouchifyMouse app handles your data." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366F1'/%3E%3C/svg%3E" />
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --bg: #0A0A0C; --surface: #18181C;
-    --text1: #F8F8FF; --text2: #B0B0C8; --text3: #6B6B88;
-    --primary: #6366F1; --primary2: #818CF8;
-    --border: rgba(255,255,255,0.10);
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
-    background: var(--bg); color: var(--text1);
-    line-height: 1.65; -webkit-font-smoothing: antialiased;
-  }
-  a { color: var(--primary2); text-decoration: none; }
-  a:hover { color: var(--primary); }
-  nav {
-    position: sticky; top: 0; z-index: 50;
-    backdrop-filter: blur(16px);
-    background: rgba(10,10,12,0.78);
-    border-bottom: 1px solid var(--border);
-    padding: 18px 24px;
-  }
-  nav .inner {
-    max-width: 760px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; }
-  .logo-mark {
-    width: 28px; height: 28px; border-radius: 8px;
-    background: linear-gradient(135deg, #818CF8, #4F46E5);
-    display: grid; place-items: center;
-    box-shadow: 0 4px 14px rgba(99,102,241,0.4);
-  }
-  main {
-    max-width: 760px; margin: 0 auto;
-    padding: 56px 24px 80px;
-  }
-  h1 {
-    font-size: 36px; font-weight: 800; letter-spacing: -0.02em;
-    margin-bottom: 12px;
-  }
-  .meta {
-    color: var(--text3); font-size: 14px;
-    margin-bottom: 36px; padding-bottom: 24px;
-    border-bottom: 1px solid var(--border);
-  }
-  h2 {
-    font-size: 20px; font-weight: 700; margin: 36px 0 12px;
-    color: var(--text1);
-  }
-  h3 {
-    font-size: 16px; font-weight: 600; margin: 24px 0 8px;
-    color: var(--text1);
-  }
-  p, li { color: var(--text2); font-size: 15px; margin-bottom: 12px; }
-  ul { padding-left: 22px; }
-  ul li { margin-bottom: 6px; }
-  strong { color: var(--text1); }
-  code {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 2px 6px;
-    font-size: 13px;
-    color: var(--text2);
-  }
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 24px; text-align: center;
-    color: var(--text3); font-size: 13px;
-  }
-  footer a { margin: 0 10px; color: var(--text2); }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234F46E5'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav><div class="inner"><a class="logo" href="index.html"><span class="logo-mark"></span>TouchifyMouse</a><a href="index.html">Home</a></div></nav>
+<nav><div class="inner"><a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 2h6a4 4 0 014 4v12a7 7 0 01-14 0V6a4 4 0 014-4zm3 3.5a1.2 1.2 0 00-1.2 1.2v3a1.2 1.2 0 002.4 0v-3A1.2 1.2 0 0012 5.5z"/></svg></span>TouchifyMouse</a><div class="links"><a href="index.html">Home</a><a href="guide.html">Guide</a></div></div></nav>
 <main>
 <h1>Delete your TouchifyMouse account</h1>
 <p class="meta">TouchifyMouse · Contact: <a href="mailto:aitools.deventiatech@gmail.com">aitools.deventiatech@gmail.com</a></p>
@@ -104,5 +35,6 @@
 <p>In-app purchases are handled by Google Play or the App Store, not by your TouchifyMouse account; deleting the account doesn’t cancel a subscription. Manage subscriptions in Google Play or your Apple ID settings.</p>
 <p>See the full <a href="privacy.html">Privacy Policy</a>.</p>
 </main>
+<footer><div class="inner"><span class="muted small">© TouchifyMouse</span><span class="spacer"></span><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></div></footer>
 </body>
 </html>
