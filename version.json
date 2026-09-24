@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "_comment": "Latest build per platform. The apps check this at launch. 'min' forces an update for anything older; leave it low unless a release is genuinely unusable.",
+  "android": {
+    "version": "1.1.4",
+    "min": "0.0.0",
+    "url": "https://play.google.com/store/apps/details?id=com.touchifymouse.app",
+    "notes": "Optional Google sign-in, crash reporting, and clearer audio setup."
+  },
+  "ios": {
+    "version": "1.1.4",
+    "min": "0.0.0",
+    "url": "https://apps.apple.com/app/touchifymouse",
+    "notes": "Optional Google sign-in, crash reporting, and clearer audio setup."
+  },
+  "macos": {
+    "version": "1.1.4",
+    "min": "0.0.0",
+    "url": "https://github.com/hamzahussainshah/touchifymouse/releases/latest/download/TouchifyMouse-mac.dmg",
+    "notes": "Accessibility now applies without reopening the app, and logs never record what you type."
+  },
+  "windows": {
+    "version": "1.1.4",
+    "min": "0.0.0",
+    "url": "https://github.com/hamzahussainshah/touchifymouse/releases/latest/download/TouchifyMouse-win-Setup.exe",
+    "notes": "Accessibility and logging fixes, and the agent ships inside the installer."
+  }
+}
