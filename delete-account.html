@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Delete your account — TouchifyMouse</title>
+<meta name="description" content="How the TouchifyMouse app handles your data." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366F1'/%3E%3C/svg%3E" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0A0A0C; --surface: #18181C;
+    --text1: #F8F8FF; --text2: #B0B0C8; --text3: #6B6B88;
+    --primary: #6366F1; --primary2: #818CF8;
+    --border: rgba(255,255,255,0.10);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg); color: var(--text1);
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--primary2); text-decoration: none; }
+  a:hover { color: var(--primary); }
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(16px);
+    background: rgba(10,10,12,0.78);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+  }
+  nav .inner {
+    max-width: 760px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  .logo-mark {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: linear-gradient(135deg, #818CF8, #4F46E5);
+    display: grid; place-items: center;
+    box-shadow: 0 4px 14px rgba(99,102,241,0.4);
+  }
+  main {
+    max-width: 760px; margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  h1 {
+    font-size: 36px; font-weight: 800; letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .meta {
+    color: var(--text3); font-size: 14px;
+    margin-bottom: 36px; padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-size: 20px; font-weight: 700; margin: 36px 0 12px;
+    color: var(--text1);
+  }
+  h3 {
+    font-size: 16px; font-weight: 600; margin: 24px 0 8px;
+    color: var(--text1);
+  }
+  p, li { color: var(--text2); font-size: 15px; margin-bottom: 12px; }
+  ul { padding-left: 22px; }
+  ul li { margin-bottom: 6px; }
+  strong { color: var(--text1); }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 13px;
+    color: var(--text2);
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px; text-align: center;
+    color: var(--text3); font-size: 13px;
+  }
+  footer a { margin: 0 10px; color: var(--text2); }
+</style>
+</head>
+<body>
+<nav><div class="inner"><a class="logo" href="index.html"><span class="logo-mark"></span>TouchifyMouse</a><a href="index.html">Home</a></div></nav>
+<main>
+<h1>Delete your TouchifyMouse account</h1>
+<p class="meta">TouchifyMouse · Contact: <a href="mailto:aitools.deventiatech@gmail.com">aitools.deventiatech@gmail.com</a></p>
+<p>An account is optional in TouchifyMouse. It only exists if you chose <strong>Sign in with Google</strong> in the app. You can delete it yourself in the app, or ask us to delete it.</p>
+<h2>In the app (immediate)</h2>
+<ol>
+<li>Open TouchifyMouse on your phone.</li>
+<li>Go to <strong>Menu → Settings</strong>.</li>
+<li>In the account card at the top, tap <strong>Delete account</strong> and confirm. Google may ask you to confirm your sign-in once more.</li>
+</ol>
+<p>Your account and profile are deleted straight away.</p>
+<h2>Without the app</h2>
+<p>Email <a href="mailto:aitools.deventiatech@gmail.com?subject=Delete%20my%20TouchifyMouse%20account">aitools.deventiatech@gmail.com</a> from the Google address you signed in with, with the subject “Delete my TouchifyMouse account”. We delete it within 7 days and reply to confirm.</p>
+<h2>What is deleted</h2>
+<ul>
+<li>Your TouchifyMouse account (Firebase Authentication), and</li>
+<li>your profile: name, email address, profile photo link, and the dates you created the account and last signed in.</li>
+</ul>
+<p>Nothing is kept. We hold no other data tied to your account: trackpad input, typing and audio only ever travel between your phone and your own computer, and crash reports are anonymous and not linked to your account (they expire after 90 days).</p>
+<p>In-app purchases are handled by Google Play or the App Store, not by your TouchifyMouse account; deleting the account doesn’t cancel a subscription. Manage subscriptions in Google Play or your Apple ID settings.</p>
+<p>See the full <a href="privacy.html">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
