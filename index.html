@@ -10,6 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<link rel="canonical" href="https://hamzahussainshah.github.io/touchifymouse/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TouchifyMouse" />
+<meta property="og:title" content="TouchifyMouse — your phone is now a wireless trackpad" />
+<meta property="og:description" content="Trackpad, keyboard, media remote, mic and speaker for your Mac or Windows PC. Free, set up in a minute." />
+<meta property="og:url" content="https://hamzahussainshah.github.io/touchifymouse/" />
+<meta property="og:image" content="https://hamzahussainshah.github.io/touchifymouse/img/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="TouchifyMouse: the desktop app and the phone trackpad, connected" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="TouchifyMouse — your phone is now a wireless trackpad" />
+<meta name="twitter:description" content="Trackpad, keyboard, media remote, mic and speaker for your Mac or Windows PC. Free, set up in a minute." />
+<meta name="twitter:image" content="https://hamzahussainshah.github.io/touchifymouse/img/og-card.png" />
+<style>
+  .demo { width: 100%; max-width: 980px; display: block; margin: 28px auto 0; aspect-ratio: 16 / 9;
+          border: 1px solid var(--line); border-radius: 16px; background: #0c0c10; }
+  .demo-links { text-align: center; margin-top: 16px; }
+</style>
 </head>
 <body>
 
@@ -63,8 +82,22 @@
       </p>
     </div>
     <div>
-      <img class="shot" src="img/trackpad.png" width="414" height="900" alt="TouchifyMouse trackpad screen on a phone, connected to a Mac" loading="eager" />
+      <img class="shot" src="img/phone-trackpad.png" width="414" height="900" alt="TouchifyMouse trackpad screen on a phone, connected to a Mac" loading="eager" />
     </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap center">
+    <span class="eyebrow">See it in 70 seconds</span>
+    <h2>From download to trackpad.</h2>
+    <p class="lead" style="margin:0 auto">Get the desktop app, connect your phone, and use it as a trackpad, keyboard, media remote, microphone and speaker.</p>
+    <video class="demo" controls preload="none" playsinline poster="media/how-to-use-poster.jpg"
+           aria-label="How to use TouchifyMouse, a 70-second walkthrough">
+      <source src="media/how-to-use.mp4" type="video/mp4" />
+      Your browser can't play this video. <a href="media/how-to-use.mp4">Download it</a> instead.
+    </video>
+    <p class="demo-links small muted">Prefer reading? <a href="guide.html">Step-by-step guide</a> · <a href="TouchifyMouse-Getting-Started.pdf">Getting Started guide (PDF)</a></p>
   </div>
 </section>
 
@@ -134,11 +167,11 @@
       </div>
       <div class="figure-row">
         <figure>
-          <img src="img/connect.png" width="414" height="900" alt="Connect screen listing the computer found on the network" loading="lazy" />
+          <img src="img/phone-connect.png" width="414" height="900" alt="Connect screen listing the computer found on the network" loading="lazy" />
           <figcaption>Your computer, found automatically.</figcaption>
         </figure>
         <figure>
-          <img src="img/keys.png" width="414" height="900" alt="Keyboard screen with modifier keys and shortcuts" loading="lazy" />
+          <img src="img/phone-keys.png" width="414" height="900" alt="Keyboard screen with modifier keys and shortcuts" loading="lazy" />
           <figcaption>Full keyboard with modifiers.</figcaption>
         </figure>
       </div>
@@ -178,7 +211,7 @@
       </details>
       <details>
         <summary>The microphone or speaker produces no sound. Why?</summary>
-        <p>Audio routing needs a free virtual audio driver: <a href="https://existential.audio/blackhole/">BlackHole</a> on macOS, <a href="https://vb-audio.com/Cable/">VB-CABLE</a> on Windows; the app offers to install it. Also pick that device as the microphone inside Zoom, Meet or Discord — those apps keep their own choice and ignore the system default. The <a href="guide.html#audio">guide</a> walks through it.</p>
+        <p>Audio needs a small device on your computer, which TouchifyMouse installs itself — press <strong>Set up now</strong> and approve the password prompt. On Windows, sending the computer's sound to your phone needs nothing at all. For calls, also pick that device as the microphone inside Zoom, Meet or Discord: those apps keep their own choice and ignore the system default. The <a href="guide.html#audio">guide</a> walks through it.</p>
       </details>
       <details>
         <summary>Can I use it over the internet?</summary>

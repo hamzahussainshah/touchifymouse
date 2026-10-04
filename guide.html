@@ -10,6 +10,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<link rel="canonical" href="https://hamzahussainshah.github.io/touchifymouse/guide.html" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="TouchifyMouse" />
+<meta property="og:title" content="Guide — set up TouchifyMouse in a minute" />
+<meta property="og:description" content="Install the desktop app, connect your phone, and use the trackpad, keyboard, media remote, microphone and speaker. Video walkthrough and PDF guide included." />
+<meta property="og:url" content="https://hamzahussainshah.github.io/touchifymouse/guide.html" />
+<meta property="og:image" content="https://hamzahussainshah.github.io/touchifymouse/img/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Guide — set up TouchifyMouse in a minute" />
+<meta name="twitter:description" content="Install the desktop app, connect your phone, and use the trackpad, keyboard, media remote, microphone and speaker. Video walkthrough and PDF guide included." />
+<meta name="twitter:image" content="https://hamzahussainshah.github.io/touchifymouse/img/og-card.png" />
+<style>
+  /* Inline: style.css is cached for a year, so new rules there would not reach returning visitors. */
+  .demo { width: 100%; display: block; margin: 26px 0 0; aspect-ratio: 16 / 9;
+          border: 1px solid var(--line); border-radius: 16px; background: #0c0c10; }
+</style>
 </head>
 <body>
 
@@ -36,6 +54,15 @@
     <span class="eyebrow">Guide</span>
     <h1>Set up TouchifyMouse.</h1>
     <p class="lead">Install the companion on your computer, connect your phone on the same Wi-Fi, and use it as a trackpad, keyboard, media remote, microphone or speaker. About a minute, start to finish.</p>
+    <div class="btn-row" style="margin-top:22px">
+      <a class="btn primary" href="TouchifyMouse-Getting-Started.pdf" download><span><span class="sub">8 pages · PDF</span><span class="big">Download the guide</span></span></a>
+      <a class="btn" href="#watch"><span><span class="sub">70 seconds</span><span class="big">Watch the walkthrough</span></span></a>
+    </div>
+    <video id="watch" class="demo" controls preload="none" playsinline poster="media/how-to-use-poster.jpg"
+           aria-label="How to use TouchifyMouse, a 70-second walkthrough">
+      <source src="media/how-to-use.mp4" type="video/mp4" />
+      Your browser can't play this video. <a href="media/how-to-use.mp4">Download it</a> instead.
+    </video>
   </div>
 </section>
 
@@ -72,7 +99,7 @@
     <h2 style="margin-top:44px">4 · Connect</h2>
     <div class="figure-row" style="margin-top:6px">
       <figure style="flex:0 0 auto">
-        <img src="img/connect.png" width="414" height="900" alt="Connect screen showing the computer found on the network" loading="lazy" />
+        <img src="img/phone-connect.png" width="414" height="900" alt="Connect screen showing the computer found on the network" loading="lazy" />
         <figcaption>The computer appears by itself.</figcaption>
       </figure>
       <div style="flex:1 1 300px">
@@ -95,7 +122,7 @@
     <h3 style="margin-top:32px">Trackpad</h3>
     <div class="figure-row">
       <figure style="flex:0 0 auto">
-        <img src="img/trackpad.png" width="414" height="900" alt="Trackpad screen" loading="lazy" />
+        <img src="img/phone-trackpad.png" width="414" height="900" alt="Trackpad screen" loading="lazy" />
       </figure>
       <div style="flex:1 1 300px">
         <table>
@@ -113,7 +140,7 @@
     <h3 style="margin-top:36px">Keyboard</h3>
     <div class="figure-row">
       <figure style="flex:0 0 auto">
-        <img src="img/keys.png" width="414" height="900" alt="Keyboard screen with modifiers and shortcuts" loading="lazy" />
+        <img src="img/phone-keys.png" width="414" height="900" alt="Keyboard screen with modifiers and shortcuts" loading="lazy" />
       </figure>
       <div style="flex:1 1 300px">
         <p>Tap the text field and type with your phone's own keyboard — capitals, symbols, emoji and other languages all arrive exactly as typed.</p>
@@ -125,7 +152,7 @@
     <h3 style="margin-top:36px">Media</h3>
     <div class="figure-row">
       <figure style="flex:0 0 auto">
-        <img src="img/media.png" width="414" height="900" alt="Media remote screen" loading="lazy" />
+        <img src="img/phone-media.png" width="414" height="900" alt="Media remote screen" loading="lazy" />
       </figure>
       <div style="flex:1 1 300px">
         <p>Play, pause, skip and mute anything that answers the media keys — Music, Spotify, a video in your browser. The volume slider mirrors your computer's volume and moves with it.</p>
@@ -136,11 +163,11 @@
     <h3 id="audio" style="margin-top:36px">Microphone &amp; speaker</h3>
     <div class="figure-row">
       <figure style="flex:0 0 auto">
-        <img src="img/audio.png" width="414" height="900" alt="Audio screen with microphone and speaker switches" loading="lazy" />
+        <img src="img/phone-audio.png" width="414" height="900" alt="Audio screen with microphone and speaker switches" loading="lazy" />
       </figure>
       <div style="flex:1 1 300px">
         <p><strong>Microphone</strong> sends your phone's mic to the computer. <strong>Speaker</strong> sends the computer's sound to your phone. Turn both on and echo cancellation is applied automatically.</p>
-        <p>Both need a free virtual audio driver, which the app offers to install: <a href="https://existential.audio/blackhole/">BlackHole</a> on macOS, <a href="https://vb-audio.com/Cable/">VB-CABLE</a> on Windows.</p>
+        <p>On Windows, <strong>Speaker</strong> works straight away — nothing to install. Everything else needs a small audio device on your computer, and TouchifyMouse installs it for you: press <strong>Set up now</strong> and approve the password prompt. There is nothing to download.</p>
         <div class="note">
           <p><strong>Important for calls:</strong> Zoom, Meet, Discord and Teams keep their own microphone setting and ignore your computer's default. Pick <strong>BlackHole 2ch</strong> (macOS) or <strong>CABLE Output</strong> (Windows) as the microphone inside that app, or it will keep recording the built-in mic.</p>
         </div>
@@ -150,7 +177,7 @@
     <h3 style="margin-top:36px">Settings</h3>
     <div class="figure-row">
       <figure style="flex:0 0 auto">
-        <img src="img/settings.png" width="414" height="900" alt="Settings screen" loading="lazy" />
+        <img src="img/phone-settings.png" width="414" height="900" alt="Settings screen" loading="lazy" />
       </figure>
       <div style="flex:1 1 300px">
         <p><strong>Appearance:</strong> AMOLED, Dark or Light, and two interface styles — Comfortable, or Minimal for a flat, quiet look.</p>
